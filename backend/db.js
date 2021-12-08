@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb+srv://tatvaSoftUser:animesh1234@cluster0.f9lnt.mongodb.net/TatvasoftPractical?retryWrites=true&w=majority")
+  .connect("mongodb+srv://<username>:<password>@cluster0.f9lnt.mongodb.net/<databaseName>?retryWrites=true&w=majority")
   .then(() => {
     const app = require("./app");
     console.log("database connection successful!");
